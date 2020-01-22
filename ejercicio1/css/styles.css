@@ -1,0 +1,98 @@
+/* CSS Document */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+body {
+    background-color: #000;
+    list-style-type: none;
+}
+
+.container{
+    margin: auto;
+    width: 1000px;
+    padding: 3em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #7ed2d2;
+    font-size: 70px;
+    font-weight: bold;
+    border-bottom: solid 5px #7ed2d2;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #944343;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+.parrafo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #f9b256;
+    line-height: 1.5em;
+}
+
+
+.vector {
+    width: 30vmin;
+}
+
+
+
+footer {
+    background-color: #7ed2d2;
+   
+    
+}
+
+footer ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+     display: flex;
+     padding: 3em;
+    
+}
+
+.logo {
+    width: 40px;
+    
+}
+
+/* Aqui empieza nav */
+
+nav {
+    background-color: #7ed2d2;
+    padding: 0;
+    margin: 0;
+    border: 10px;
+    
+}
+
+nav ul {
+     list-style: none;
+     justify-content: space-evenly;
+     display: flex;
+   
+
+}
+
+nav li{
+    font-family: 'Roboto', sans-serif;;
+    list-style: none;
+    padding: .5em 1em;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover {
+    color: white;
+    background-color: black;
+}
