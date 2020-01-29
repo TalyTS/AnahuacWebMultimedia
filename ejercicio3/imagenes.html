@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes Bpg</title>
+    <meta name="description" content="Continuación ejercicio 3 de clase de Diseño Web Anáhuac 2020, Imágenes Bpg"/>
+    <meta name="author" content="Taly TS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imágenes en diferentes formatos: BPG Y WEBP</h1>
+        </header>
+        <main>
+            <h2>Imagen Bpg</h2>
+           <img src="images/puppy2.bpg" alt="Cachorro corriendo en pasto">
+           <h2>Imágenes Webp</h2>
+           <!-- Tambien se puede escribir así, solo que algunos navegadores no lo leen: <img src="images/Yorkshire_terrier_sleep2.webp" alt="Yorkshire Terrier durmiendo"> -->
+           <picture>
+            <source srcset="images/Yorkshire_terrier_sleep2.webp" type="image/webp">
+            <source srcset="images/Yorkshire_terrier_sleep2.jpg" type="image/jpeg"> 
+            <img src="images/Yorkshire_terrier_sleep2.webp" alt="Yorkshire Terrier durmiendo">
+           </picture>
+           <picture>
+                <source srcset="images/Chihuahua-Corralet.webp" type="image/webp">
+                <source srcset="images/Chihuahua-Corralet.jpg" type="image/jpeg"> 
+                <img src="images/Chihuahua-Corralet.webp" alt="Chihuahua viendo a la cámara">
+           </picture>
+        </main>
+        <footer>
+            <p>© Copyright</p>
+        </footer>
+    </div>
+
+ <script src="js/bpgdec8a.js"></script>
+</body>
+</html>

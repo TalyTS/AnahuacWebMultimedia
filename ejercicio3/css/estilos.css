@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    display: inline-block;
+      position: relative;
+      width: 1000px;
+      height: auto;
+      color: #960101;
+      line-height: 3.5em;
+      background-color: #000;
+    align-content: center;
+  
+  }
+
+  canvas {
+    width: 50%;
+    height: 50%;
+  }
+
+  h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+  h2 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 25px;
+  }
+
+  img {
+      width: 40%;
+      height: 40%;
+      margin-bottom: 3em;
+  }
+
+  footer {
+    width: 1000px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-color: #960101;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
