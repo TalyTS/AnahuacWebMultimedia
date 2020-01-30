@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes responsivas</title>
+    <meta name="description" content="Continuación ejercicio 3 de clase de Diseño Web Anáhuac 2020, Imágenes responsivas"/>
+    <meta name="author" content="Taly TS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/estilo_res.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imágenes Responsivas</h1>
+        </header>
+        <main>
+            <img src="images/cavalier_900.jpg" alt="Cavalier King" 
+            sizes="(max-width: 900px) 100vw, 900px" 
+            srcset="
+                images/cavalier_468.jpg 468w, 
+                images/cavalier_768.jpg 768w, 
+                images/cavalier_1024.jpg 1024w,
+                images/cavalier_1600.jpg 1600w,
+            ">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/cocker_468.jpg" >
+                <source media="(min-width: 768px)" srcset="images/cocker_768.jpg" >
+                <img src="images/cocker_1200.jpg" alt="Cocker Spaniel mirando al horizonte">
+            </picture>
+        </main>
+        <footer>
+            <p>Sitio. © Copyright</p>
+        </footer>
+    </div>
+</body>
+</html>
