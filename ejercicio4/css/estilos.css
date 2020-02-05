@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      margin: 0 auto;
+  }
+
+  .container{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: 
+      "cabeza cabeza cabeza cabeza . lado "
+      ". principal principal principal . lado "
+      ". principal principal principal . lado "
+      " pie pie pie pie pie pie";
+      gap: 5px;
+      background-color: #4b4b4b;
+      color: #fff;
+      margin: 0 auto;
+      
+  }
+
+  header {
+      grid-area: cabeza;
+      background-color: #0d447e;
+      padding: 5px;
+  }
+
+  main {
+      grid-area: principal;
+      background-color: #181818;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10vmin;
+  }
+
+  aside {
+      grid-area: lado;
+      background-color: #b8860b;
+      padding: 5px;
+  }
+
+  object, svg {
+      width: 25vw;
+      display: inline-flex;
+  }
+
+  footer {
+      grid-area: pie;
+      background-color: #a7112f;
+      padding: 5px;
+      
+      
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    
+    }
+  
+  h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+    }
+  
