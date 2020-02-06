@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  body {
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  header {
+      background-color: #639f27;
+      color: #fff;
+      height: 30vh;
+      text-align: center;
+  }
+
+  .container {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      background-color: #000;
+  }
+
+  h1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 5rem;
+      font-weight: 800;
+      color: #000;
+  }
+
+  h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 4rem;
+      font-weight: 700;
+      background-color: #0a3131;
+      color: #639f27;
+      margin: 0 auto;
+  }
+
+  p {
+      font-weight: 300;
+      text-align: justify;
+      color: #fff;
+  }
+
+  h1, h2, p, img {
+      padding: .8rem;
+      line-height: 1.3em;
+  }
+
+#dogpng {
+    width: 300px;
+    float: left;
+    shape-outside: circle(135px at 168px 152px);
+}
+
+#dogstand {
+    width: 400px;
+    float: left;
+    shape-outside: circle(118px at 200px 144px);
+    clip-path: polygon(134px 176px, 36.61% 87.45%, 43.58% 87.48%, 41.74% 69.67%, 50.29% 76.56%, 50.55% 91.24%, 57.98% 93.24%, 59.28% 78.58%, 60.47% 65.84%, 64.07% 60.14%, 67.18% 73.3%, 65.69% 82.74%, 276px 210px, 73.16% 83.1%, 73.8% 64.29%, 72.54% 57.5%, 69.92% 50.43%, 275px 104px, 65.85% 31.87%, 253px 65px, 59.42% 27.04%, 56.04% 17.8%, 52.3% 13.11%, 45.5% 9.15%, 40.31% 9%, 36.6% 11.77%, 30.32% 18.64%, 28.61% 22.79%, 128px 84px, 34.1% 41.32%, 133px 120px);
+}
+
+#dogpng2 {
+    float: right;
+    shape-outside: url(../img/dogpng.png);
+}
+
+main {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "aa aa aa a a a a"
+    "b b b b bb bb bb"
+    "cc cc cc c c c c"
+    ;
+}
+
+footer {
+    height: 20vh;
+    background-color: #046060;
+}
+
+#uno {
+    grid-area: a;
+    margin-right: 3rem;
+    margin-left: 1em;
+}
+
+#dos {
+    grid-area: b;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+#tres {
+    grid-area: c;
+    margin-left: 1rem;
+}
+
+#titulo1 {
+    grid-area: aa;
+    padding: 1em;
+ }
+
+#titulo2 {
+   grid-area: bb;
+   padding: 1em;
+}
+
+#titulo3 {
+    grid-area: cc;
+    padding: 1em;
+ }
+
