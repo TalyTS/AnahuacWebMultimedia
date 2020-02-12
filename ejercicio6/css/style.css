@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500,700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+
+ h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+  }
+
+  p, li {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 100px 1fr 1fr 1fr 1fr 200px;
+      gap: 2px;
+      grid-template-areas: 
+      ". . h h h h h h"
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      "f f f f f f f f"
+      ;
+      
+  }
+
+  header {
+      grid-area: h;
+      background-color:#EDDCC9;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  main {
+      grid-area: m;
+      background-color: #A31621;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: f;
+      background-color: #053C5E;
+      color: #fff;
+
+  }
+
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 40vw;
+  }
+
+  nav li {
+      width: 20vw;
+  }
+
+  section {
+      border: solid #EDDCC9;
+      border-width: 1.5px;
+      border-radius: 30px;
+      width: 20vw;
+      height: 50vh;
+      text-align: center;
+      margin: 5px;
+      
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+ section:nth-child(2) {
+     background-color: #1F7A8C;
+ }
