@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:500,700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+  }
+
+  body {
+      background-color: #000;
+      color: #fff;
+  }
+
+  nav ul{
+    text-decoration: none;
+    margin: 1em;
+    margin-left: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+  main {
+    width: 100vw;
+    height: auto;
+  }
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-35deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(35deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+#my-svg {
+  height:100%;
+  width:100%;
+  max-height:75vw;
+  max-width:75vh;
+  margin: 0 auto;
+  margin-left: 38%;
+  margin-bottom: 3vh;
+  animation: spin 5s infinite linear;
+  transform: translate(50%, 50%);
+}
+
+#prox {
+    position: absolute;
+    font-size: 10vmin;
+    margin-left: 20vw;
+    margin-top: 32vmin;
+}
+
+footer {
+    position: fixed;
+    height: 20vh;
+    width: 100%;
+    float: left;
+    padding: 1em;
+    background-color: #3f7e85;
+}
+
+ .redes {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+}

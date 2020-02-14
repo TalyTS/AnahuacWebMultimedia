@@ -97,3 +97,12 @@ h1 {
  section:nth-child(2) {
      background-color: #1F7A8C;
  }
+
+/* Otra manera de cambiar tamaño íconos:
+ i.fas, i.fab {
+   font-size: 10rem;
+ } */
+
+ i.fas:hover, i.fab:hover {
+   color: #467694;
+ }
