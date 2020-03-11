@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 8</title>
+    <meta name="description" content="Ejercicio 8 de clase de Diseño Web Anáhuac 2020, Scroll Reveal"/>
+    <meta name="author" content="Taly TS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Scroll Reveal effect</h1>
+        </header>
+        <section class="section">
+            <h2 class="flip">Párrafo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla expedita harum quod iusto debitis, aut asperiores amet. Repellat autem quidem deleniti tenetur soluta ipsam at, adipisci velit est neque porro. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci id eaque fugiat et nostrum, aspernatur optio repudiandae temporibus sit mollitia voluptates error soluta ut quas exercitationem quo possimus. Totam, numquam!</p>
+            <img src="https://picsum.photos/400/300?grayscale" alt="Imagen aleatoria blanco y negro" class="imgrandom">
+        </section>
+        <section class="section">
+            <h2 class="flip">Párrafo 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dignissimos illo quaerat commodi corporis possimus in veniam at suscipit? Magni saepe aliquid minima assumenda. Cumque officia nulla sit facere nihil? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente pariatur natus corporis, eveniet minus dolores? Nostrum ex deserunt nesciunt? Qui facilis quibusdam possimus in nesciunt sequi saepe illum aspernatur veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem vitae dignissimos vel, velit possimus non distinctio ratione excepturi. Et corporis blanditiis ex omnis ipsam maiores earum amet provident alias cumque.</p>
+            <img src="https://picsum.photos/400/300/" alt="Imagen aleatoria color" class="imgrandom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia vel, atque dignissimos voluptatibus ducimus reiciendis? Minus, rem. Dolorum repudiandae in ab fugiat et non delectus vero quae neque quibusdam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illo deserunt veritatis distinctio eveniet dolore impedit nulla a obcaecati sed quis optio, eum, natus ratione cum totam. Id, molestias eos.</p>
+        </section>
+        <section>
+            <img src="imgs/arbol2.jpg" alt="Árbol 2" class="imagenes">
+            <img src="imgs/Chihuahua-Corralet.jpg" alt="Chihuahua" class="imagenes">
+            <img src="imgs/cocker_1200.jpg" alt="Ccoker" class="imagenes">
+            <img src="imgs/libros.jpg" alt="Libros Hunger Games" class="imagenes">
+            <img src="imgs/luces.jpg" alt="Luces calle" class="imagenes">
+            <img src="imgs/planta_contraluz.jpg" alt="Planta contraluz" class="imagenes">
+            <img src="imgs/textura.jpg" alt="Textura suéter" class="imagenes">
+            <img src="imgs/Yorkshire_terrier_sleep2.jpg" alt="Yorkshire" class="imagenes">
+        </section>
+        <section  class="section">
+            <h2 class="flip">Párrafo 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore similique id libero ipsum incidunt commodi voluptatum voluptatem accusantium quasi veniam dolorem maxime, doloremque eaque possimus! Praesentium nihil eos soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi, alias molestias dolores perferendis sequi explicabo numquam hic maxime asperiores ipsam doloremque excepturi, quas, voluptatibus doloribus esse aut aperiam nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga sunt dolor. Sint laudantium debitis consequuntur nulla quis ullam fuga odio, aliquid sequi eum amet odit blanditiis cum? Pariatur, quisquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At ut ipsum delectus, quos velit facere eius sed dolorem magni natus accusamus, aliquid pariatur repellendus voluptates? Distinctio aspernatur inventore consequatur eum!</p>
+            <img src="https://picsum.photos/400/300/?blur" alt="Imagen aleatoria blur" class="imgrandom">
+        </section>
+        <footer>
+            
+            <ul>
+                <p>© Taly TS</p>
+                <li>
+                  <a href=""></a><i class="fab fa-facebook-square fa-2x"></i>
+                </li>
+                <li>
+                  <a href=""></a><i class="fab fa-twitter-square fa-2x"></i>
+                </li>
+                <li>
+                  <a href=""></a><i class="fab fa-instagram-square fa-2x"></i>
+                </li>
+              </ul>
+        </footer>
+    </div>
+
+    <script>
+        ScrollReveal().reveal('.section', { 
+            delay: 270,
+            duration: 1200,
+            reset: true 
+        });
+
+    ScrollReveal().reveal('.imagenes', { 
+        delay: 200,
+        duration: 1200,
+        reset: true,
+        scale: 0.85
+     });
+
+    ScrollReveal().reveal('.imagrandom', { 
+        duration: 900,
+        reset: true
+    });
+
+    ScrollReveal().reveal('.flip', {
+        delay: 800,
+        rotate: {
+            x: 60,
+            z: 60
+        }
+    });
+</script>
+
+</body>
+</html>
