@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700,800|Raleway:300,400&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 15vmin;
+    line-height: 5rem;
+    margin: 2rem;
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 5vmin;
+    line-height: 5rem;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-right: 40px;
+    font-size: 2vmin;
+  }
+
+ body {
+      background-color: #000;
+      color: #fff;
+      
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". t t t t"
+    ". . p1 p1 . "
+    ". . p2 p2 p2 "
+    ". . . . l";
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    height: 400px;
+  
+  }
+
+  .titulo {
+    grid-area: t;
+    z-index: 1;
+    margin-top: 100px;
+    
+  }
+
+  .parrafo1 {
+      grid-area: p1;
+      float: left;
+      
+      
+  }
+
+  .parrafo2 {
+    grid-area: p2;
+    float: left;
+    
+
+}
+
+object {
+  opacity: 0.15;
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  height: 640px;
+  width: 1200px;
+  object-fit: cover;
+}
+
+.link {
+  grid-area: l;
+  text-decoration: none;
+  color: #7b0b14;
+  font-size: 2.5vmin;
+  margin-top: 3.6rem;
+}
+
+hr {
+  height: 2px;
+  width: auto;
+  background-color:#3f7e85;
+  border-radius: 20px;
+  border-color: transparent;
+  margin: 0 auto;
+}
+
+
+/* **** Media Querys ***** */
+
+@media (min-width: 360px) and (max-width: 425px) {
+  object {
+    width: 360px;
+    height: 500px;
+  
+  }
+}
+
+@media (min-width: 426px) and (max-width: 559px) {
+  object {
+    width: 426px;
+  }
+
+  .titulo {
+    margin-top: 70px;
+    
+  }
+}
+
+@media (min-width: 560px) and (max-width: 740px) {
+  object {
+    width: 560px;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 1023px) {
+  object {
+    width: 740px;
+  }
+
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  object {
+    width: 1024px;
+  }
+
+}

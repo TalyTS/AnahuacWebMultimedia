@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <meta name="description" content="Ejercicio 10 de clase de Diseño Web Anáhuac 2020, Error 404"/>
+    <meta name="author" content="Taly TS">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+            <section class="titulo"><h1>Error 404</h1>
+                <hr>
+            </section>
+            <section class="parrafo1">
+                <h2>¡Lo sentimos! </h2>
+            </section>
+            <section class="parrafo2">
+                <p> La página que esta buscando no existe o no puede ser encontrada. Por favor verifique la dirección introducida o regrese a la página de inicio</p>
+            </section>
+                <a class="link" href="index.html">Vuelve a Inicio</a>
+                 <object id="nodos" type="image/svg+xml" data="img/nodoshor.svg"></object>  
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script> 
+    <script>
+        new Vivus('nodos', { duration: 150, type: 'delayed', start: 'autostart', pathTimingFunction: Vivus.EASE, animTimingFunction: easeOutBounce},);
+    </script>
+
+</body>
+</html>
